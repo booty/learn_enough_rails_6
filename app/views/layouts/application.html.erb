@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title).present? ? yield(:title) : action_name.titleize %> | 💪 Sample App!!!!</title>
+    <title><%= page_title(yield(:title), self) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
